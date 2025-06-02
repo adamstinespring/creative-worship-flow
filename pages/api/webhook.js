@@ -1,7 +1,7 @@
 import Stripe from 'stripe';
 import { buffer } from 'micro';
 import { doc, updateDoc } from 'firebase/firestore';
-import { db } from '../lib/firebase';
+import { db } from '@/lib/firebase';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
